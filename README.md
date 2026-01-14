@@ -1,5 +1,11 @@
 # 💰 Expense Ledger
 
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![Hive](https://img.shields.io/badge/Hive-FFDD00?style=for-the-badge&logo=hive&logoColor=000000)](https://pub.dev/packages/hive)
+[![Provider](https://img.shields.io/badge/Provider-FB0A8D?style=for-the-badge&logoColor=white)](https://pub.dev/packages/provider)
+[![Material3](https://img.shields.io/badge/Material3-6200EE?style=for-the-badge&logoColor=white)](https://m3.material.io/)
+
 A high-performance personal finance tracker built with **Flutter**. This app leverages **NoSQL local storage** and advanced data visualization to provide a fast, private, and intuitive budgeting experience.
 
 ---
@@ -27,6 +33,8 @@ A high-performance personal finance tracker built with **Flutter**. This app lev
 
 **Add Expense**  
 <img src="assets/dark_mode/5_add_expense.png" width="400" alt="Dark Mode Add Expense Screen" />
+
+> Full screenshots including Settings, Edit Transaction, Login/Signup, and Splash Screen are available in the `assets/screenshots` folder.
 
 ---
 
@@ -97,7 +105,6 @@ git clone https://github.com/Rumaisa19/expense_ledger_app.git
 cd expense-ledger
 flutter pub get
 ```
-````
 
 2. **Run**
 
@@ -111,16 +118,12 @@ flutter run
 
 **Rumaisa Mushtaq**
 
-- **LinkedIn:** https://linkedin.com/in/rumaisamushtaq
-- **GitHub:** https://github.com/Rumaisa19
+- **LinkedIn:** [https://linkedin.com/in/rumaisamushtaq](https://linkedin.com/in/rumaisamushtaq)
+- **GitHub:** [https://github.com/Rumaisa19](https://github.com/Rumaisa19)
 
 ---
 
 ## 📞 Support
 
-If you find this project useful, please give it a ⭐️ on GitHub!  
+If you find this project useful, please give it a ⭐️ on GitHub!
 Feel free to share feedback or ask questions — contributions are welcome.
-
-```
-
-```
