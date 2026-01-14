@@ -1,6 +1,3 @@
-Perfect! Here’s a **final professional README version** with a **Tech Stack & Packages Used** section added. This will make your project look polished and recruiter-ready. I also kept your screenshots and all previous improvements intact.
-
-````markdown
 # 💰 Expense Ledger
 
 A high-performance personal finance tracker built with **Flutter**. This app leverages **NoSQL local storage** and advanced data visualization to provide a fast, private, and intuitive budgeting experience.
@@ -123,5 +120,7 @@ flutter run
 
 If you find this project useful, please give it a ⭐️ on GitHub!  
 Feel free to share feedback or ask questions — contributions are welcome.
+
+```
 
 ```
