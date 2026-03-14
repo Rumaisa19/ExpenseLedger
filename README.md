@@ -32,7 +32,7 @@ Provider-based layered architecture with isolated domain providers:
 - **PreferencesProvider** — persistent user preferences via SharedPreferences
 
 Hive selected for binary storage format and O(1) indexed reads — ensures
-charts and large datasets render without lag.
+Charts and large datasets render without lag.
 
 ---
 
@@ -55,29 +55,19 @@ charts and large datasets render without lag.
 
 ---
 
-## 📱 Screenshots Gallery
+## Screenshots
 
 ### Light Mode
 
-**Dashboard**  
-<img src="assets/light_mode/4_home.png" width="400" alt="Light Mode Dashboard – Real-time Ledger" />
-
-**Analytics**  
-<img src="assets/light_mode/8_stats.png" width="400" alt="Light Mode Analytics – Weekly Insights" />
-
-**Add Expense**  
-<img src="assets/light_mode/5_add_expense.png" width="400" alt="Light Mode Add Expense Screen" />
+| Dashboard | Analytics | Add Expense |
+|---|---|---|
+| ![](assets/light_mode/4_home.png) | ![](assets/light_mode/8_stats.png) | ![](assets/light_mode/5_add_expense.png) |
 
 ### Dark Mode
 
-**Dashboard**  
-<img src="assets/dark_mode/4_home.png" width="400" alt="Dark Mode Dashboard – Real-time Ledger" />
-
-**Analytics**  
-<img src="assets/dark_mode/8_stats.png" width="400" alt="Dark Mode Analytics – Weekly Insights" />
-
-**Add Expense**  
-<img src="assets/dark_mode/5_add_expense.png" width="400" alt="Dark Mode Add Expense Screen" />
+| Dashboard | Analytics | Add Expense |
+|---|---|---|
+| ![](assets/dark_mode/4_home.png) | ![](assets/dark_mode/8_stats.png) | ![](assets/dark_mode/5_add_expense.png) |
 
 ---
 
