@@ -1,4 +1,7 @@
-# 💰 Expense Ledger
+# Expense Ledger
+
+A personal finance tracker built with Flutter featuring real-time analytics,
+category-based expense management, and a full dark/light theming system.
 
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
@@ -6,7 +9,49 @@
 [![Provider](https://img.shields.io/badge/Provider-FB0A8D?style=for-the-badge&logoColor=white)](https://pub.dev/packages/provider)
 [![Material3](https://img.shields.io/badge/Material3-6200EE?style=for-the-badge&logoColor=white)](https://m3.material.io/)
 
-A high-performance personal finance tracker built with **Flutter**. This app leverages **NoSQL local storage** and advanced data visualization to provide a fast, private, and intuitive budgeting experience.
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Flutter |
+| State Management | Provider |
+| Local Storage | Hive NoSQL |
+| Charts | fl_chart |
+| Design System | Material 3 |
+
+---
+
+## Architecture
+
+Provider-based layered architecture with isolated domain providers:
+
+- **ExpenseProvider** — CRUD operations, category filtering, aggregation logic
+- **ThemeProvider** — adaptive theme management (System / Light / Dark)
+- **PreferencesProvider** — persistent user preferences via SharedPreferences
+
+Hive selected for binary storage format and O(1) indexed reads — ensures
+charts and large datasets render without lag.
+
+---
+
+## Features
+
+**Ledger Management**
+- Full CRUD with persistent local storage
+- 8 expense categories with custom icons
+- Swipe-to-action gestures with haptic feedback
+
+**Analytics**
+- Weekly trend charts with dynamic auto-scaling
+- Pie chart spending distribution by category
+- Real-time state sync across all modules
+
+**Design**
+- Material 3 with high-contrast typography
+- System, Light, and Dark theme support
+- Responsive layout across screen sizes
 
 ---
 
@@ -14,10 +59,10 @@ A high-performance personal finance tracker built with **Flutter**. This app lev
 
 ### Light Mode
 
-**Dashboard – Real-time Ledger**  
+**Dashboard**  
 <img src="assets/light_mode/4_home.png" width="400" alt="Light Mode Dashboard – Real-time Ledger" />
 
-**Analytics – Weekly Insights**  
+**Analytics**  
 <img src="assets/light_mode/8_stats.png" width="400" alt="Light Mode Analytics – Weekly Insights" />
 
 **Add Expense**  
@@ -25,105 +70,30 @@ A high-performance personal finance tracker built with **Flutter**. This app lev
 
 ### Dark Mode
 
-**Dashboard – Real-time Ledger**  
+**Dashboard**  
 <img src="assets/dark_mode/4_home.png" width="400" alt="Dark Mode Dashboard – Real-time Ledger" />
 
-**Analytics – Weekly Insights**  
+**Analytics**  
 <img src="assets/dark_mode/8_stats.png" width="400" alt="Dark Mode Analytics – Weekly Insights" />
 
 **Add Expense**  
 <img src="assets/dark_mode/5_add_expense.png" width="400" alt="Dark Mode Add Expense Screen" />
 
-> Full screenshots including Settings, Edit Transaction, Login/Signup, and Splash Screen are available in the `assets/screenshots` folder.
-
 ---
 
-## 🎯 Engineering Highlights
-
-- **Layered Architecture:** Implemented with the **Provider pattern** to ensure a strict separation between Presentation, Domain, and Data layers.
-- **Optimized Performance:** Utilizes **Hive (NoSQL)** for O(1) data access, offering superior speed over traditional SQLite for local persistence.
-- **Advanced Visualization:** Custom `fl_chart` implementation featuring dynamic scaling, shorthand currency formatting, and theme-aware rendering.
-- **Modular Design:** Built with **13+ atomic custom components** to ensure code reusability and UI consistency.
-
----
-
-## ✨ Core Functionalities
-
-### 🏦 Ledger Management
-
-- **Full CRUD:** Effortless transaction management with persistent local storage.
-- **Categorization:** Smart sorting across 8 essential categories with custom icons.
-- **Native UX:** Integrated swipe-to-action gestures and tactile haptic feedback.
-
-### 📊 Insights & Analytics
-
-- **Adaptive Charting:** Weekly trends that auto-scale for high-volume data without breaking layouts.
-- **Distribution Analysis:** Pie-chart breakdown for instant identification of spending patterns.
-- **Reactive UI:** Real-time state synchronization across all application modules.
-
-### 🎨 Design System
-
-- **Adaptive Theming:** Seamless support for System, Light, and Dark modes.
-- **Material 3:** Modern aesthetic with high-contrast typography and fluid animations.
-- **Responsive:** Designed to adapt perfectly to any screen size or aspect ratio.
-
----
-
-## 🏗️ System Design
-
-### State Management (Provider)
-
-Uses a reactive approach where domains (Expenses, Theme, Preferences) are isolated into specific Providers to optimize memory and prevent unnecessary rebuilds.
-
-### Persistence Strategy (Hive)
-
-Selected for its binary storage format and rapid indexing, ensuring complex charts and large datasets render instantly without lag.
-
----
-
-## 🛠️ Tech Stack & Packages Used
-
-- **Flutter:** Frontend framework for cross-platform development
-- **Dart:** Programming language
-- **Hive:** NoSQL local storage for fast CRUD operations
-- **Provider:** State management
-- **fl_chart:** Custom charts and data visualization
-- **Material 3:** Modern design components and theming
-- **Other Packages:**
-  - `intl` (currency formatting)
-  - `shared_preferences` (storing user preferences)
-  - `flutter_localizations` (multi-language support)
-
----
-
-## 🚀 Getting Started
-
-1. **Clone & Install**
-
+## Setup
 ```bash
-git clone https://github.com/Rumaisa19/expense_ledger_app.git
-cd expense-ledger
+git clone https://github.com/Rumaisa19/ExpenseLedger.git
+cd ExpenseLedger
 flutter pub get
-```
-
-2. **Run**
-
-```bash
 flutter run
 ```
 
 ---
 
-## 👨‍💻 Author
+## Developer
 
-**Rumaisa Mushtaq**
-
-- **LinkedIn:** [https://linkedin.com/in/rumaisamushtaq](https://linkedin.com/in/rumaisamushtaq)
-- **GitHub:** [https://github.com/Rumaisa19](https://github.com/Rumaisa19)
-
----
-
-## 📞 Support
-
-If you find this project useful, please give it a ⭐️ on GitHub!
-Feel free to share feedback or ask questions — contributions are welcome.
+**Rumaisa Mushtaq** — Flutter Developer
+- GitHub: [Rumaisa19](https://github.com/Rumaisa19)
+- LinkedIn: [rumaisamushtaq](https://linkedin.com/in/rumaisamushtaq)
+```
